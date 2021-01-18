@@ -34,8 +34,6 @@ def day1pt2(lines):
                     return lines[i] * lines[j] * lines[k]
 
 if __name__ == "__main__":
-    # Read the data
     lines = np.loadtxt("day1/input.txt",  delimiter="\n", unpack=False, dtype=np.int32)
-    # Print the results
-    print(day1(lines))
+    print(day1pt1(lines))
     print(day1pt2(lines))
