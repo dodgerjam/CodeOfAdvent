@@ -101,5 +101,5 @@ if __name__ == "__main__":
     text_file = open("day17/input.txt", "r")
     x = text_file.readlines()
     text_file.close()
-    #print(day17pt1(x))
+    print(day17pt1(x))
     print(day17pt2(x))
