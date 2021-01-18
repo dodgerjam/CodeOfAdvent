@@ -82,7 +82,7 @@ def day2pt2(x):
 
 
 if __name__ == "__main__":
-    text_file = open("input.txt", "r")
+    text_file = open("day2/input.txt", "r")
     x = [x.strip() for x in text_file.readlines()]
     text_file.close()
     print(day2pt1(x))
