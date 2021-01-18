@@ -24,6 +24,6 @@ def day15pt2(start, n_number = 30000000):
 
 if __name__ == "__main__":
     #start = [14,8,16,0,1,17]
-    print('PART1: ', day15pt1([14,8,16,0,1,17]))
-    print('PART2: ',day15pt2([14,8,16,0,1,17]))
+    print(day15pt1([14,8,16,0,1,17]))
+    print(day15pt2([14,8,16,0,1,17]))
 
