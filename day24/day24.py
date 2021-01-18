@@ -52,6 +52,15 @@ def day24pt2(x):
 
 
 def getAdjacentValues(key):
+    """Returns all 6 adjacent co-ordinates to a point on a hexagonal grid
+
+    Args:
+        key (list): list of 2 integers. 1st element represents 
+        the x co-ordinate, 2nd element represents the y
+
+    Returns:
+        list: list of tuples of the 6 adjacent values.
+    """
     x = key[0]
     y = key[1]
     return [(x+2,y),(x-2,y),(x+1,y+1),(x+1,y-1),(x-1,y+1),(x-1,y-1)]
