@@ -1,5 +1,5 @@
 import unittest
-from day5 import getRowID, getColumnID, getSeatID
+from day5 import getRowID, getColumnID, getSeatID, day5pt1, day5pt2
 
 class TestSum(unittest.TestCase):
 
@@ -20,6 +20,18 @@ class TestSum(unittest.TestCase):
         self.assertEqual(getRowID(x[2]), 102, "Should be 102")
         self.assertEqual(getColumnID(x[2]), 4, "Should be 4")
         self.assertEqual(getSeatID(x[2]), 820, "Should be 7")
+    
+    def testpt2(self):
+        text_file = open("day5/input.txt", "r")
+        x = text_file.readlines()
+        text_file.close()
+        self.assertEqual(day5pt1(x), 838, "Should be 838")
+
+    def testpt3(self):
+        text_file = open("day5/input.txt", "r")
+        x = text_file.readlines()
+        text_file.close()
+        self.assertEqual(day5pt2(x), 714, "Should be 714")
    
 if __name__ == "__main__":
     unittest.main()
