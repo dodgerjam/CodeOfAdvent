@@ -19,13 +19,13 @@ class TestSum(unittest.TestCase):
         text_file = open("day18/input_test2.txt", "r")
         x = text_file.readlines()
         text_file.close()
-        self.assertEqual(day18pt2(x), 694173)
+        self.assertEqual(day18pt2(x), 694173, "Should be 75592527415659")
 
     def testpt4(self):
         text_file = open("day18/input.txt", "r")
         x = text_file.readlines()
         text_file.close()
-        self.assertEqual(day18pt2(x), 360029542265462)
+        self.assertEqual(day18pt2(x), 360029542265462, "Should be 360029542265462")
 
     
    
