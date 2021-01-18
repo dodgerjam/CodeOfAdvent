@@ -8,12 +8,24 @@ class TestSum(unittest.TestCase):
         x = text_file.readlines()
         text_file.close()
         self.assertEqual(day10pt1(x), 220)
-    
+
     def testpt2(self):
+        text_file = open("day10/input.txt", "r")
+        x = text_file.readlines()
+        text_file.close()
+        self.assertEqual(day10pt1(x), 2484)
+    
+    def testpt3(self):
         text_file = open("day10/input_test.txt", "r")
         x = text_file.readlines()
         text_file.close()
         self.assertEqual(day10pt2(x), 19208)
+
+    def testpt4(self):
+        text_file = open("day10/input.txt", "r")
+        x = text_file.readlines()
+        text_file.close()
+        self.assertEqual(day10pt2(x), 15790581481472)
     
    
 if __name__ == "__main__":
