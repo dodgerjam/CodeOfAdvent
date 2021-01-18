@@ -37,7 +37,7 @@ def day23pt1(x):
         current_index %= len(cups)
         current_cup = cups[current_index]
     
-    return getItemsAfterOne(cups)
+    return int(getItemsAfterOne(cups))
 
 def getItemsAfterOne(cups):
     index1 = cups.index(1)
