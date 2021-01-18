@@ -28,7 +28,6 @@ def day20pt1(x):
             aligned_dict[tile2].add(tile1)
     
     corners = [key for key,value in aligned_dict.items() if len(value)==2]
-    print(len(corners))
     return reduce(lambda x, y: x * y, corners)
 
 def getTransformations(value):
@@ -170,12 +169,9 @@ def solveJigsaw(aligned_dict, my_dict):
 
 def getAlignedDict(my_dict):
     aligned_dict = {k:{'Left':[], 'Right':[], 'Above':[], 'Below':[]} for k in my_dict.keys()}
-    print(len(list(itertools.combinations(my_dict.keys(), 2))))
     for key_pair in itertools.combinations(my_dict.keys(), 2):
-        #print(key_pair)
         values1 = my_dict[key_pair[0]]
         values2 = my_dict[key_pair[1]]
-        #print(len(list(itertools.product(range(len(values1)), range(len(values2))))))
         for grid_pair in itertools.product(range(len(values1)), range(len(values2))):
             gp_index1, gp_index2 = grid_pair
 
