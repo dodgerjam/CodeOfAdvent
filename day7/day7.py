@@ -1,10 +1,9 @@
 def day7pt1(x):
     my_dict = createDict(x)
-    return list(set(getAllGold('shiny gold bag', my_dict=my_dict)))
+    return len(list(set(getAllGold('shiny gold bag', my_dict=my_dict))))
 
 def day7pt2(x):
     my_dict = createDictPt2(x)
-
     return getNumOfBags('shiny gold bag', my_dict) - 1
 
 def getAllGold(bag, my_dict, my_list = [],):

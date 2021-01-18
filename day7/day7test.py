@@ -7,14 +7,31 @@ class TestSum(unittest.TestCase):
         text_file = open("day7/input_test.txt", "r")
         x = text_file.readlines()
         text_file.close()
-        expected_result = ['bright white bag', 'muted yellow bag', 'dark orange bag', 'light red bag']
-        self.assertCountEqual(day7pt1(x), expected_result)
+        self.assertEqual(day7pt1(x), 4)
     
-    def testpt2(self):
+    # def testpt2(self):
+    #     text_file = open("day7/input.txt", "r")
+    #     x = text_file.readlines()
+    #     text_file.close()
+    #     print(day7pt1(x))
+    #     self.assertEqual(day7pt1(x), 139, "Should be 139")
+    
+    def testpt3(self):
         text_file = open("day7/input_test.txt", "r")
         x = text_file.readlines()
         text_file.close()
-        self.assertEqual(day7pt2(x), 32)
+        self.assertEqual(day7pt2(x), 32, "Should be 32")
+
+    def testpt4(self):
+        text_file = open("day7/input.txt", "r")
+        x = text_file.readlines()
+        text_file.close()
+        self.assertEqual(day7pt2(x), 58175, "Should be 58175")
+    
+   
+if __name__ == "__main__":
+    unittest.main()
+
     
    
 if __name__ == "__main__":
